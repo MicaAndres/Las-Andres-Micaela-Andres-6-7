@@ -80,7 +80,14 @@ li{
         grid-template-areas: "header" "div" "article" "aside" "section" "footer";
     }
     
-    header div.buscar, nav, .iniciarSesion, .imgNavMobile{
+    .sizeLogo{
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+ 
+    header div.buscar, .iniciarSesion, .imgNavMobile, .funDesktop{
         display: none;
     }
     header{
@@ -319,7 +326,7 @@ li{
         grid-row-gap: 15px;
         grid-template-areas: "header" "div" "article" "aside" "section" "footer";
     }
-    header div.buscar, nav, .iniciarSesion, .imgNavMobile{
+    header div.buscar, .iniciarSesion, .imgNavMobile, .funDesktop{
         display: none;
     }
     header{
@@ -327,6 +334,13 @@ li{
         flex-direction: row;
         justify-content:space-around;
         align-items: center;
+    }
+
+    .sizeLogo{
+
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
     }
 
     .Mobile{
@@ -565,11 +579,21 @@ li{
 
     #main{
         grid-template-columns: auto;
-        grid-template-rows: 5% 30% 5% auto 20% 12%;
+        grid-template-rows: 15% 30% 5% auto 20% 12%;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         grid-template-areas: "header" "div" "article" "aside" "section" "footer";
     }
+
+    /*form.d-flex{
+        display: none;
+    }
+    /*.tituloPrincipal{
+        font-size: 32px;
+    }
+    .imgNav{
+        padding-top: 25px;
+    }*/
 
     nav, header div.buscar, .iniciarSesion{
         display: flex;
@@ -582,21 +606,19 @@ li{
         
     }
 
-    .tituloPrincipal{
-        font-size: 32px;
-    }
-   /* .imgNav{
-        padding-top: 25px;
-    }*/
+
+    
+
+
 
     ul.menu{
         display: flex;
         flex-wrap: row;
         align-items: strech;
         justify-content: center;
-        
-    
     }
+
+
 
     nav ul.menu li{
         display: inline-block;
@@ -681,7 +703,7 @@ li{
 
     #contacto{
         grid-template-columns: auto;
-        grid-template-rows: 5% 5% auto 15%;
+        grid-template-rows: 15% 5% auto 15%;
         grid-column-gap: 20px;
         grid-row-gap: 15px;
         grid-template-areas: "header" "article" "section" "footer";
@@ -696,7 +718,7 @@ li{
 
     #iniciarSesion{
         grid-template-columns: auto;
-        grid-template-rows: 10% 5% auto 12%;
+        grid-template-rows: 15% 5% auto 12%;
         grid-column-gap: 20px;
         grid-row-gap: 15px;
         grid-template-areas: "header" "article""section" "footer";
@@ -730,7 +752,7 @@ li{
 
     #nosotras{
         grid-template-columns: auto;
-        grid-template-rows: 5% auto 35% 12%;
+        grid-template-rows: 10% auto 35% 12%;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         grid-template-areas: "header" "aside" "article" "footer";
@@ -753,7 +775,7 @@ li{
    
     #preguntasFrecuentes{
         grid-template-columns: auto;
-        grid-template-rows: 5% auto 15%;
+        grid-template-rows: 15% auto 15%;
         grid-column-gap: 20px;
         grid-row-gap: 15px;
         grid-template-areas: "header" "section" "footer";
@@ -775,7 +797,7 @@ li{
 
     #venta{
         grid-template-columns: auto;
-        grid-template-rows: 5% 10% auto 12%;
+        grid-template-rows: 10% 10% auto 12%;
         grid-column-gap: 20px;
         grid-row-gap: 20px;
         grid-template-areas: "header" "article" "section" "footer";
@@ -864,7 +886,11 @@ li{
      height: 375px;
     }
     
-   
+   .sizeLogo{
+       width: 150px;
+       height: 150px;
+       border-radius: 80px;
+   }
 
 }
 
