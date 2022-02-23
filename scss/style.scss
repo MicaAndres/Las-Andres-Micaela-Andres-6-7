@@ -1,0 +1,167 @@
+@import "_variables";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+
+body{
+    background-color: $colorfondo;
+    color: $colorletras;
+    font-family: $fontfamily;
+    margin-right: 0%;
+
+    div{
+        grid-template-columns: auto;
+        grid-template-rows: 10% auto 35% 12%;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: "header" "aside" "article" "footer";
+    
+       #conteiner{
+         
+
+            header{
+             background-color: $colorheaderfooter;
+             font-family: $fontfamily;
+             color: $colorletras;
+             border-bottom: solid 3px $colorborder;
+
+                .sizeLogo{
+                    display: flex;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 80px;
+                    justify-content: flex-start;
+                }
+
+
+                div{
+                    display: inline;
+                    align-items: center;
+                    justify-content: start;
+                    form{
+                    
+                        input{
+                            border: 0;
+                            text-decoration-line: underline;
+                            text-decoration-color:$colorletras; 
+                            background-color: $colorborder; 
+                            background-image: linear-gradient(to bottom, #fceee6, #faf5f2  );
+                        }
+                    }
+                }
+
+                .menus {
+                    ul {
+                        display: flex;
+                        flex-wrap: row;
+                        align-items: strech;
+                        justify-content: center;
+                        
+                        
+                        li{
+                            display: inline-block;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            
+                        }
+                    }
+                } 
+                
+                
+                .imgNav{
+                    display: inline;
+                    align-items: stretch;
+                    justify-content: end;
+                    max-width: 25px;
+                    max-height: 25px;
+                    
+            
+                }
+
+        
+                a{
+                    text-decoration: none;
+                    color: $colorletras;
+
+                    &:hover{
+                        color: $colorletras;
+                        text-decoration: underline;
+                    }
+                }
+
+                div{
+                    display: inline;
+                    align-items: center;
+                    justify-items: flex-end;
+                    #boton{
+                        background-image: linear-gradient(to bottom, #fceee6, #fceee6);
+                        border: none;
+                        transition: 1s;
+                            &:hover{
+                                font-size: 18px;
+                            }
+                       
+                    }
+                    
+
+                }
+            }    
+        }
+
+        aside{
+                h3{
+                    text-align: center;
+                    padding-bottom: 150px;
+                    padding-top: 50px;
+                }
+
+        
+            }
+        .presentacion{
+               padding-top: 20px;
+               padding-left: 50px;
+               padding-right: 50px;
+               font-size: 16px;
+               line-height: 1.5em;
+        }
+
+        footer{
+            background-color: $colorheaderfooter;
+            font-family: $fontfamily;
+            color: $colorletras;
+            border-top: solid 3px $colorborder;
+
+            img{
+                max-width: 25px;
+                max-height: 25px;
+           
+            }
+        
+        }
+
+        a{
+            text-decoration: none;
+            color: $colorletras;
+
+            &:hover{
+                color: $colorletras;
+                text-decoration: underline;
+            }
+        }
+
+        #boton{
+            background-image: linear-gradient(to bottom, #fceee6, #fceee6);
+            border: none;
+            transition: 1s;
+    
+            &:hover{
+                font-size: 18px;  
+            }
+
+        }
+    }
+}
+
+
+
